@@ -36,7 +36,7 @@ object App {
       else 2 // Connection failed. 2=nagios plugin return code to say CRITICAL
     } catch {
       case e:SQLException => 2 // CRITICAL
-      case e => 3 // UNKOWN return code
+      case e:Throwable => 3 // UNKOWN return code
     }
 
   }
