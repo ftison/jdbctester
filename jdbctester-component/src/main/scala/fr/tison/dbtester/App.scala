@@ -43,7 +43,7 @@ object App {
 
 
 
-  def main(args : Array[String]) : Int =
+  def main(args : Array[String]) : Unit =
   {
     def readArgument(argName:String):String =
     {
